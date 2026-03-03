@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="row"> <!-- Основной блок для работы с колонками -->
+   <div class="col-2 bg-dark min-vh-100 d-flex flex-column justify-content-between">
+       <div>
+           <nav class="navbar bg-transparent mx-md-2 mt-3 border-bottom border-secondary">
+              <div class="container-fluid">
+                <a class="navbar-brand text-white bb-secondary 1px solid" href="#">
+                  <img src="/img/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Меню
+                </a>
+              </div>
+           </nav>
+           <div class="list-group mx-md-4 mt-3">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                  <img src="/img/homepage.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Главная
+              </a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0">
+                  <img src="/img/web_page.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Категории
+              </a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0">
+                  <img src="/img/building.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Заказы
+              </a>
+              <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0">
+                  <img src="/img/webcast.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Контакты
+              </a>
+           </div>
+       </div>
+
+
+       <div class="dropup-center dropup mx-md-4 mb-3 border-top border-secondary" style="z-index: 1030;">
+          <button class="btn btn-secondary dropdown-toggle bg-transparent text-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Пользователь
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Профиль</a></li>
+            <li><a class="dropdown-item" href="#">Выход</a></li>
+          </ul>
+        </div>
+   </div>
+
+   <div class="col-10">
+       <div class="row mt-5 mb-5">
+           <h2 class="text-center">Контакты</h2>
+       </div>
+       <div class="row justify-content-around">
+          <div class="col-sm-4">
+            <div class="card p-4 shadow">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Почта</label>
+                    <div class="input-group">
+                      <span class="input-group-text">@</span>
+                      <input type="email" class="form-control" id="email" placeholder="Введите email">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Напишите ваше сообщение"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+              </div>
+            </div>
+
+
+              <div class="col-md-4">
+                  <h2>Наши контакты</h2>
+                  <p class="mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                  </p>
+                </div>
+              </div>
+
+        </div>
+   </div>
+
+</div>
+</body>
+</html>
